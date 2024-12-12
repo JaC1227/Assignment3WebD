@@ -26,7 +26,7 @@ exports.handler = async (event) => {
       from: `"${name}" <mailgun@sandbox3cda22694a9d47afb5ef2fda3a82243d.mailgun.org>`,      to: ["jaedynchinn@icloud.com"], 
       subject: subject,
       text: `Message: ${message}\nPhone: ${phone}`,
-      html: `<h1>${message}</h1><p>${phone}</p>`,
+      html: `<h4>${message}</h4><p>${phone}</p>`,
       'h:Reply-To': email, // Reply to the user's email address
     };
 
