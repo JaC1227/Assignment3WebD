@@ -23,11 +23,10 @@ exports.handler = async (event) => {
 
     // Prepare email data
     const data = {
-      from: "Contact Form <mailgun@sandbox3cda22694a9d47afb5ef2fda3a82243d.mailgun.org>",
-      to: ["jaedynchinn@icloud.com"], 
+      from: `"${name}" <mailgun@sandbox3cda22694a9d47afb5ef2fda3a82243d.mailgun.org>`,      to: ["jaedynchinn@icloud.com"], 
       subject: subject,
-      text: `Message from: ${name}\nPhone: ${phone}\nMessage: ${message}`,
-      html: `<h1>Message from: ${name}</h1><p>${message}</p>`,
+      text: `Message: ${message}\nPhone: ${phone}`,
+      html: `<h1>${message}</h1><p>${phone}</p>`,
       'h:Reply-To': email, // Reply to the user's email address
     };
 
