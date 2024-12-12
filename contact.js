@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
 
     const spinner = document.getElementById("spinner");
-    const responseMessage = document.getElementById("responseMessage");
+    const successMessage = document.getElementById("success-message");
+    const errorMessage = document.getElementById("error-message");
   
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
@@ -22,23 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const formData = new FormData(form);
   
       try {
-        const response = await fetch("/netlify/functions/contact.js", {
+        const response = await fetch("/.netlify/functions/contact", {
           method: "POST",
-          body: JSON.stringify({
-            name: formData.get("name"),
-            phone: formData.get("phone"),
-            email: formData.get("email"),
-            subject: formData.get("subject"),
-            message: formData.get("message"),
-          }),
-          headers: {
-            "Content-Type": "application/json",
-          },
+          body: formData,
         });
   
         if (response.ok) {
           spinner.classList.add("hidden");
-          responseMessage.classList.remove("hidden");
+          successMessage.classList.remove("hidden");
         } else {
           throw new Error("Failed to submit form.");
         }
@@ -46,6 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("There was an error submitting the form. Please try again.");
         form.classList.remove("hidden");
         spinner.classList.add("hidden");
+        errorMessage.classList.remove("hidden");
+        console.error("Error submitting form:", error);  // Log the error for debugging
       }
     });
   });
