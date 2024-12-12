@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const formData = new FormData(form);
   
       try {
-        const response = await fetch("/.netlify/functions/contact", {
+        const response = await fetch("/netlify/functions/contact.js", {
           method: "POST",
           body: JSON.stringify({
             name: formData.get("name"),
