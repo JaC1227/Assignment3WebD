@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("contactForm");
+  const form = document.getElementById("contact-form");
+
     const spinner = document.getElementById("spinner");
     const responseMessage = document.getElementById("responseMessage");
   
