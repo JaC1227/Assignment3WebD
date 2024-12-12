@@ -13,12 +13,14 @@ exports.handler = async (event) => {
   console.log('Mailgun API Key:', process.env.MAILGUN_API_KEY);
   console.log('Request Body:', event.body);
 
-  try {
-    // Decode the base64-encoded body and parse it as JSON
-    const decodedBody = Buffer.from(event.body, 'base64').toString('utf8');
-    console.log('Decoded Body:', decodedBody);
+  // Decode and parse the body
+  const decodedBody = Buffer.from(event.body, 'base64').toString('utf8');
+  const parsedBody = querystring.parse(decodedBody);
+  console.log('Parsed Body:', parsedBody);
+  
+  const { name, phone, email, subject, message } = parsedBody;
 
-    const { name, phone, email, subject, message } = JSON.parse(decodedBody);
+  try {
 
     // Create email data
     const data = {
