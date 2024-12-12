@@ -1,5 +1,6 @@
 const formData = require('form-data');
 const Mailgun = require('mailgun.js');
+const querystring = require('querystring');
 require('dotenv').config();
 
 // Initialize Mailgun client with API key
