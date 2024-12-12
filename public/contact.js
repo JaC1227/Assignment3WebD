@@ -20,7 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
       form.classList.add("hidden");
       spinner.classList.remove("hidden");
   
-      const formData = new FormData(form);
+      const formData = {
+        name: form.querySelector("#name").value,
+        email: form.querySelector("#email").value,
+        phone: form.querySelector("#phone").value,
+        subject: form.querySelector("#subject").value,
+        message: form.querySelector("#message").value,
+      };
   
       try {
         const response = await fetch("/.netlify/functions/send-email", {
