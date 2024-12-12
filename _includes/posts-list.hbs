@@ -1,0 +1,18 @@
+<section>
+  {{#if taggedPosts.length}}
+    <h2>Posts tagged with "blog"</h2>
+    <ul>
+      {{#each taggedPosts}}
+        <li>
+          <h3><a href="/{{slug}}/">{{title}}</a></h3>
+          {{#if feature_image}}
+            <img src="{{feature_image}}" alt="{{title}}" />
+          {{/if}}
+          <div>{{{html}}}</div>
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <p>No posts found with the specified tag.</p>
+  {{/if}}
+</section>

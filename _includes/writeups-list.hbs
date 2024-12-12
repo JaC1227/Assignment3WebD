@@ -1,0 +1,18 @@
+<section>
+  {{#if taggedWriteups.length}}
+    <h2>Posts tagged with "writeup"</h2>
+    <ul>
+      {{#each taggedWriteups}}
+        <li>
+          <h3><a href="/{{slug}}/">{{title}}</a></h3>
+          {{#if feature_image}}
+            <img src="{{feature_image}}" alt="{{title}}" />
+          {{/if}}
+          <div>{{{html}}}</div>
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <p>No posts found with the specified tag.</p>
+  {{/if}}
+</section>

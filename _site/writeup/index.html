@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>writeup</title>
+    <link href="/css/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <link href="/css/index.css" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Optional Bootstrap theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/blog/">Blog</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Albums/0">Music List</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Writeup">Writeups</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Contact">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </header>    <nav>
+      <ol>
+          <li class="crumb">Blog</li>
+      </ol>
+    </nav>
+    <header>
+        <h1>writeup</h1>
+    </header>
+    <main>
+        
+<main>
+  <h2>Latest Writeups</h2>
+  <section>
+      <h2>Posts tagged with "writeup"</h2>
+      <ul>
+          <li>
+            <h3><a href="/object-object/">Lab 1 Writeup</a></h3>
+            <div><p><br>Static Site Generators are a powerful tool for creating fast, efficient websites by pre-building HTML pages that can be served as static files. My experience in SSGs is pretty much limited to what I've done in my coursework for my program.<br><strong>## &nbsp;Template Engines<br>### Handlebars<br>**Pros:**</strong><br>&nbsp; - Handlebars syntax is simple and clean, making it easier for beginners to understand and learn.&nbsp; - Handlebars is logic-less but includes helpers for basic logic operations.&nbsp; - As a widely used templating engine, community support is very strong and it has many available plugins/extension.<br><strong>**Cons:**</strong><br>&nbsp; - Not including logic in the case of some more complicated templating can cause more work.&nbsp; - Simple templates are easy, complex ones can become bigger than engines that integrate more logic and helpers.<br><strong>### Pug<br>**Pros:**</strong><br>&nbsp; - &nbsp;White space-sensitive syntax in Pug can be used to decrease the amount of HTML that the developer would need to write.&nbsp; - &nbsp;Pug directly supports logic, making it easier to handle more complex conditions and loops without the need for external helpers.&nbsp; - &nbsp;Pug templates are more legible for some developers since no closing tags are utilized.<br><strong>**Cons:**</strong><br>&nbsp; - Pug's unique syntax may be confusing to new users, especially if they are used to HTML.&nbsp; - Pug's reliance on whitespace for its structure can lead to some errors if not handled correctly, especially in large projects.&nbsp; <strong>### Nunjucks<br>**Pros:**</strong><br>&nbsp; - Nunjucks is flexible and supports a wide variety of features, including template inheritance, conditionals, and loops, allowing for a lot of flexibility in its templates&nbsp; - Nunjucks has a more robust error handling system than some other templating engines, such as pug, which makes it easier to troubleshoot.&nbsp; - Like Pug, Nunjucks allows for logic inside the template, allowing for easier handling of more complex conditions.<br><strong>**Cons:**</strong>&nbsp; - Nunjucks can become complex within larger templates due to the number of features.&nbsp; - It is less popular than other templating engines such as handlebars, which means there is fewer community resources.<br>I will be using Nunjucks for the assignment since it was the one which was originally suggested for it.<br><strong>## Other SSG Applications</strong><br>Besides 11ty, there are several other popular static site generators.<br><strong>### Gatsby</strong>Gatsby is a React-based SSG, popular for creating fast and dynamic sites.<strong>**Pros:**</strong>&nbsp; - React based, strong plugin ecosystem.<strong>**Cons:**</strong>&nbsp; - Steeper learning curve, slower build times for large sites.<br><strong>### Hugo</strong>Hugo is known for being one of the fastest SSGs available.<strong>**Pros:**</strong>&nbsp; - Very fast, good for larger sites.<strong>**Cons:**</strong>&nbsp; - Less flexible with dynamic content.<br><strong>### Jekyll</strong>Jekyll is a very popular SSG and is supported natively by Github Pages.<strong>**Pros:**</strong>&nbsp; - Simple, well-established, well-documented.<strong>**Cons:**</strong>&nbsp; - Slower than Hugo, fewer new, advanced features.<br><strong>## Front Matter</strong><br>Front matter is a block of metadata at the top of a file, often used in static site generators (SSG) like Eleventy, Jekyll, Hugo, and others. It provides information about the file's content that can be used to control how the page is generated or displayed.<br><strong>### How Front Matter Relates to the Web:</strong><br>&nbsp; - Front matter allows you to define custom metadata for web pages. This metadata can be used for things like page titles, SEO, or categorization. For example, setting a title in the front matter may control the HTML &lt;title&gt; tag.<br>&nbsp; - In SSGs, front matter is crucial because it tells the generator how to handle each page. You might use front matter to define the layout, the URL structure, or &nbsp; &nbsp; which template to apply. This makes it easy to automate the process of generating static HTML from markdown or template files.<br>&nbsp; - Data defined in the front matter can be accessed by the template engine to dynamically insert values into the page. For example, you can use a variable like &nbsp; &nbsp; {{ title }} in a Handlebars template to automatically insert the title from the front matter into the generated HTML.<br><br><br><strong>**Reference Links:**</strong><br>https://stackshare.io/stackups/nunjucks-vs-pughttps://stackshare.io/stackups/handlebars-vs-nunjuckshttps://codechronicle.medium.com/pros-and-cons-of-popular-javascript-templating-engines-e5d1e3d4504fhttps://www.slant.co/versus/181/185/~handlebars-js_vs_pug-jadehttps://stackshare.io/stackups/gatsbyjs-vs-hugo-vs-jekyllhttps://mozilla.github.io/nunjucks/</p></div>
+          </li>
+          <li>
+            <h3><a href="/object-object/">Lab 2 Writeup</a></h3>
+            <div><p><br><br><strong># Lab 2</strong><br>Headless CMS systems have become increasingly popular for developers and content creators seeking flexible and scalable content management solutions. These systems allow for easy content distribution across various platforms using APIs, while separating the back-end from the front-end. In this writeup, I will research five popular headless CMS options: Strapi, Contentful, Sanity, Prismic, and Ghost. Each system has unique features and strengths, making them ideal for different use cases.<br><strong>## Strapi</strong><br>Strapi is an open-source headless CMS known for its flexibility and robust features. It provides users with full control over their content models and database configurations. Supporting multiple databases, including MongoDB, PostgreSQL, and MySQL, Strapi gives developers the freedom to choose the most suitable database for their project.<br>One of Strapi's most notable features is its API-first approach. It supports both RESTful and GraphQL APIs, making it easy for developers to integrate content into any front-end framework. Strapi also includes an intuitive admin panel, which simplifies content management for users who are not as technical. Additionally, Strapi’s open-source nature allows for extensive customization, making it a great choice for projects that require highly tailored solutions.<br>Strapi is ideal for developers who need a flexible, customizable CMS with an extensive range of options for integrating content across multiple platforms.<br><strong>## Contentful</strong><br>Contentful is a cloud-based headless CMS designed for enterprise-level scalability and high-performance needs. It offers a user-friendly interface for content management, allowing teams to collaborate efficiently on large-scale projects. Contentful’s content model is structured around content types, enabling content creators to manage and organize data effectively.<br>The platform stands out due to its powerful API, which supports both REST and GraphQL, providing developers with multiple ways to retrieve and display content. Contentful also integrates seamlessly with other third-party tools, making it a great option for businesses that need to combine content with other services, such as analytics or marketing automation platforms.<br>With its focus on scalability and integrations, Contentful is an excellent choice for large enterprises or teams working on complex, multi-channel projects.<br><strong>## Sanity</strong><br>Sanity is a headless CMS that excels in real-time collaboration and content flexibility. It offers a highly customizable content editing interface, known as the Sanity Studio, which can be tailored to fit specific project needs. Sanity also provides a powerful query language called GROQ, which allows for advanced filtering and structuring of content.<br>One of the standout features of Sanity is its real-time collaboration capabilities, making it a great choice for teams working on projects that require constant updates and adjustments. Additionally, Sanity offers a generous free tier and a cloud-based solution, ensuring that content is always synced and updated in real-time.<br>Sanity is perfect for teams looking for a collaborative, flexible CMS that allows for deep customization and real-time content editing.<br><strong>## Prismic</strong><br>Prismic is a headless CMS designed with a strong focus on content creation and ease of use. Its user-friendly interface allows content creators to manage and organize content without needing technical expertise. Prismic also features a content slicing feature, which allows developers to create reusable content components, making it easier to manage and maintain content across multiple pages.<br>Prismic supports RESTful and GraphQL APIs, and it integrates smoothly with popular front-end frameworks like React, Vue.js, and Next.js. One of its unique features is the "Slices" feature, which allows for the dynamic assembly of content, providing flexibility and efficiency for content-heavy websites.<br>Prismic is best suited for users who want a simple, intuitive interface with powerful API integrations, ideal for teams that need to frequently update and publish content quickly.<br><strong>## Ghost</strong><br>Ghost is a headless CMS focused on providing a streamlined experience for content creators, particularly for blogs and subscription-based content platforms. Unlike many other headless CMS systems, Ghost is built specifically with publishing in mind, offering built-in features like SEO tools, membership management, and email newsletters.<br>Ghost is built on Node.js, offering excellent performance and scalability for content-heavy websites. Its minimalist interface allows users to focus on writing and publishing without being overwhelmed by complex features. Additionally, Ghost provides both a self-hosted and managed hosting option, giving users the flexibility to choose between handling the infrastructure themselves or using Ghost’s managed services.<br>Ghost is ideal for creators and publishers who prioritize simplicity and speed, with a particular focus on content delivery and user engagement.<br><strong>## Conclusion</strong><br>Each of the five headless CMS options—Strapi, Contentful, Sanity, Prismic, and Ghost—offers unique strengths suited to different types of projects.<br>- Strapi is perfect for developers seeking a flexible, customizable solution with full control over content and APIs.- Contentful excels in enterprise-level projects that need scalability and strong integration capabilities.- Sanity shines for teams looking for a real-time, collaborative CMS with a high level of customization.- Prismic offers a user-friendly interface with seamless integration for content-heavy websites.- Ghost is the go-to choice for content-centric platforms that require simplicity, speed, and built-in publishing tools.<br>For my project, I have chosen to use Ghost. Its focus on performance and simplicity, combined with built-in features tailored for content creators, makes it an ideal option for building a platform focused on delivering high-quality written content.<br><strong>## GHOST</strong>I installed ghost on my laptop but thats about as far as i've been able to get with this stuff...&lt;img src="/quiz-game/public/images/ghost1.png" width="300" height="200"&gt;I wrote a post on the ghost localhost site but i haven't figured out how to use it here.</p></div>
+          </li>
+      </ul>
+  </section></main>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Jaedyn Chinn</p>
+        <script>
+            document.getElementById("currentYear").innerText = new Date().getFullYear();
+        </script>
+    </footer>  </body>
+</html>
