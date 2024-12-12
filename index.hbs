@@ -1,0 +1,8 @@
+---
+title: "Welcome to my website"
+layout: layout.html
+home: /
+---
+{{#each collections.blogs}}
+<h2><a href="{{this.url}}">{{this.data.title}}</a></h2>
+{{/each}}
