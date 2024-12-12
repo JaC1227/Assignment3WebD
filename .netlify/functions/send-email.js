@@ -14,7 +14,11 @@ exports.handler = async (event) => {
   console.log('Request Body:', event.body);
 
   try {
-    const { name, phone, email, subject, message } = JSON.parse(event.body);
+    // Decode the base64-encoded body and parse it as JSON
+    const decodedBody = Buffer.from(event.body, 'base64').toString('utf8');
+    console.log('Decoded Body:', decodedBody);
+
+    const { name, phone, email, subject, message } = JSON.parse(decodedBody);
 
     // Create email data
     const data = {
