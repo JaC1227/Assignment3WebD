@@ -10,14 +10,16 @@ const mg = mailgun.client({
 
 exports.handler = async (event) => {
   try {
-    const form = new URLSearchParams(event.body); // Parse form data
+    console.log("Request body:", event.body); // Log the entire request body for debugging
+
+    const form = new URLSearchParams(event.body); // Parse the form data from the request body
     const name = form.get('name');
     const phone = form.get('phone');
     const email = form.get('email');
     const subject = form.get('subject');
     const message = form.get('message');
 
-    console.log("Form Data: ", { name, phone, email, subject, message }); // Log the data for debugging
+    console.log("Form Data:", { name, phone, email, subject, message }); // Log the extracted form data
 
     // Prepare email data
     const data = {
