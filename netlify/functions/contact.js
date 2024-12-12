@@ -11,8 +11,8 @@ exports.handler = async (event) => {
     });
 
     const data = {
-      from: domain, 
-      to: "recipient@example.com", 
+      from: `postmaster@${process.env.MAILGUN_DOMAIN}`,
+      to: "jaedyn.chinn@dcmail.ca", 
       subject: formData.subject,
       text: `Message from: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nMessage: ${formData.message}`,
     };
