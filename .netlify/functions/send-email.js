@@ -24,7 +24,7 @@ exports.handler = async (event) => {
     // Prepare email data
     const data = {
       from: `"${name}" <mailgun@sandbox3cda22694a9d47afb5ef2fda3a82243d.mailgun.org>`,
-      to: ["jaedynchinn@icloud.com", "adam.kunz@durhamcollege.ca"], 
+      to: ["jaedynchinn@icloud.com"], 
       subject: `[This message was sent automatically] ${subject}`,
       text: `Message: ${message}\nPhone: ${phone}`,
       html: `<h4>${message}</h4><p>${phone}</p>`,
